@@ -4,24 +4,108 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Building a Terminal UI in Pure HTML</title>
+	<title>never kill yourself</title>
 	<link rel="stylesheet" href="../css/style.css" />
+
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/enkia/tokyo-night-vscode-theme/extras/prism/prism-tokyo-night-dark.css" />
+	<script src="https://unpkg.com/prismjs/prism.js"></script>
+
+	<script src="https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+	<script src="https://unpkg.com/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/enkia/tokyo-night-vscode-theme/extras/prism/prism-tokyo-night-dark.css" />
+
+	<!-- Prism core -->
+	<script src="https://unpkg.com/prismjs/prism.js"></script>
+
+	<!-- Plugin configs -->
+	<script>
+		Prism.plugins.NormalizeWhitespace.setDefaults({
+			'remove-trailing': true,
+			'remove-indent': true,
+			'left-trim': true,
+			'right-trim': true,
+			'tabs-to-spaces': 2
+		});
+	</script>
+
+	<script src="https://unpkg.com/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+	<script src="https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/show-language/prism-show-language.min.css" />
+	<script src="https://unpkg.com/prismjs/plugins/show-language/prism-show-language.min.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/treeview/prism-treeview.min.css" />
+	<script src="https://unpkg.com/prismjs/plugins/treeview/prism-treeview.min.js"></script>
+
+	<script src="https://unpkg.com/prismjs/plugins/keyword/prism-keyword.min.js"></script>
+
+	<link rel="stylesheet"
+		href="https://unpkg.com/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.css" />
+	<script src="https://unpkg.com/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+	<script src="https://unpkg.com/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/command-line/prism-command-line.min.css" />
+	<script src="https://unpkg.com/prismjs/plugins/command-line/prism-command-line.min.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css" />
+	<script src="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+
 </head>
 
 <body>
-	<a href="../index.html" class="post-preview">
-		<span class="prompt">
-			<span class="prompt-part1">❯</span>
-			<span class="prompt-part2">❯</span>
-			<span class="prompt-part3">❯</span>
-		</span>
-		<span class="sh-command">cd</span><span class="sh-arg"> $HOME</span>
-	</a>
-	<h1>you were made in the image of god</h1>
+	<div class="sticky-header">
+		<a href="../index.html" class="post-preview">
+			<span class="prompt">
+				<span class="prompt-part1">❯</span>
+				<span class="prompt-part2">❯</span>
+				<span class="prompt-part3">❯</span>
+			</span>
+			<span class="sh-command">cd</span><span class="sh-arg"> $HOME</span>
+		</a>
+		<p class="md-header1"># the world needs you</p>
+	</div>
 
-	<p>the world needs you.</p>
+	<pre><code class="language-sh">
+			echo $ALBERT_CAMUS
+		</code></pre>
 
-	<hr />
+	<p class="md-highlight">There is but one truly serious philosophical problem,
+		and that is suicide.</p>
+
+	<pre class="line-numbers"><code class="language-python">
+			def hello():
+			print("hello world")
+		</code></pre>
+
+	<pre class="line-numbers"><code class="language-rust">
+			fn main() {
+			println!("hello world");
+			}
+		</code></pre>
+
+	<pre class="line-numbers"><code class="language-haskell">
+			main :: IO ()
+			main = do
+			putStrLn "hello world"
+		</code></pre>
+
+	<p class="md-quote">&gt;</span> <span class="md-comment">this is a quote</p>
+
+	<ol>
+		<li class="md-number">item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+	<ul>
+		<li class="md-number">item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+
+	<span class="md-link">[title]</span>(<span class="md-url">https://example.com</span>)
 </body>
 
 </html>
