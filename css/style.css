@@ -438,3 +438,11 @@ pre[class*="language-"] {
 .token.italic {
 	font-style: italic;
 }
+
+blockquote {
+  color: #9ece6a;
+  font-style: italic;
+  border-left: 3px solid #7aa2f7;
+  padding-left: 1em;
+  margin: 1em 0;
+}
