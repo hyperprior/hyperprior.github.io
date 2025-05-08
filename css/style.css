@@ -18,13 +18,19 @@ a {
 	color: #7aa2f7;
 	text-decoration: none;
 }
+
 a:hover {
 	text-decoration: underline;
+}
+
+.site-title {
+	color: #bb9af7;
 }
 
 .post-title {
 	font-size: 1.5em;
 	margin: 0.5em 0;
+	color: #9ece6a;
 }
 
 .post-date {
@@ -36,4 +42,66 @@ hr {
 	border: none;
 	border-top: 1px solid #3b4261;
 	margin: 2em 0;
+}
+
+.prompt {
+	font-family: 'Courier New', monospace;
+	font-weight: bold;
+	letter-spacing: -1px; /* tighten overall spacing */
+	display: inline-flex;
+	gap: 1px; /* minimal space between symbols */
+}
+
+.prompt-part1,
+.prompt-part2,
+.prompt-part3 {
+	display: inline-block;
+}
+.prompt-part1 { color: #7aa2f7; } /* blue */
+.prompt-part2 { color: #9ece6a; } /* green */
+.prompt-part3 { color: #bb9af7; } /* purple */
+
+.post-header {
+	margin-bottom: 2em;
+}
+
+.prompt-line {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5em;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.prompt-line .prompt {
+	letter-spacing: -1px;
+	display: inline-flex;
+	gap: 1px;
+}
+
+.prompt-line .post-title {
+	flex: 1;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.prompt-line .post-date {
+	color: #565f89;
+	font-size: 0.9em;
+	white-space: nowrap;
+}
+
+.subtitle-line {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	color: #c0caf5;
+	margin-top: 0.3em;
+	font-size: 1em;
+}
+
+.output-symbol {
+	color: #7aa2f7;
+	font-weight: bold;
 }
