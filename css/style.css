@@ -106,3 +106,73 @@ hr {
 	color: #7aa2f7;
 	font-weight: bold;
 }
+
+.sh-prompt {
+	color: #9ece6a;
+}
+
+.sh-symbol {
+	color: #bb9af7;
+}
+
+.sh-date {
+	color: #c0caf5;
+}
+
+.sh-link {
+	color: #7aa2f7;
+	text-decoration: none;
+}
+.sh-link:hover {
+	text-decoration: underline;
+}
+
+.nvim-block {
+	background-color: #1a1b26;
+	padding: 1em;
+	border-radius: 6px;
+	font-family: 'Courier New', monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #c0caf5;
+	overflow-x: auto;
+	border: 1px solid #3b4261;
+}
+
+.line {
+	display: block;
+	white-space: pre;
+}
+
+.line-num {
+	display: inline-block;
+	width: 2ch;
+	color: #565f89;
+	margin-right: 1ch;
+}
+
+.sh-shebang {
+	color: #7dcfff; /* cyan */
+}
+
+.sh-command {
+	color: #7aa2f7; /* blue */
+	font-weight: bold;
+}
+
+.sh-arg {
+	color: #e0af68; /* yellow/orange */
+}
+
+a.post-preview {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 6px;
+	padding: 0.5em;
+	transition: background 0.2s ease;
+}
+
+a.post-preview:hover {
+	background-color: rgba(122, 162, 247, 0.1); /* #7aa2f7 @ 10% opacity */
+}

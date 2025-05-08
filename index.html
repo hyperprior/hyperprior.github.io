@@ -4,32 +4,39 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Guildhall Blog</title>
+	<title>hyperprior</title>
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+	<span class="sh-command">echo</span> <span class="sh-arg">"</span><span class="sh-symbol">$</span>(<span
+		class="sh-command">whoami</span>)<span class="sh-arg">"</span>
 	<h1 class="site-title">hyperprior</h1>
-	<p>because</p>
 
 	<hr />
-	<div class="post-header">
-		<div class="prompt-line">
-			<span class="prompt">
-				<span class="prompt-part1">❯</span>
-				<span class="prompt-part2">❯</span>
-				<span class="prompt-part3">❯</span>
-			</span>
-			<a href="posts/never-kill-yourself.html" class="post-title">
-				never kill yourself
-			</a>
-			<span class="post-date">May 8, 2025</span>
+	<span class="line"><span class="sh-command">stat</span> -f <span class="sh-arg">"%N %Sm"</span> -t <span
+			class="sh-arg">"%b %e, %Y"</span> posts/* <span class="sh-symbol">|</span> <span
+			class="sh-command">sort</span></span>
+	</br>
+
+	<a href="posts/never-kill-yourself.html" class="post-preview">
+		<div class="post-header">
+			<div class="prompt-line">
+				<span class="prompt">
+					<span class="prompt-part1">❯</span>
+					<span class="prompt-part2">❯</span>
+					<span class="prompt-part3">❯</span>
+				</span>
+					<span class="post-title">
+						never kill yourself</span>
+				<span class="post-date">May 8, 2025</span>
+			</div>
+			<div class="subtitle-line">
+				<span class="output-symbol">⏎</span>
+				<span class="post-subtitle">because the world needs you</span>
+			</div>
 		</div>
-		<div class="subtitle-line">
-			<span class="output-symbol">⏎</span>
-			<span class="post-subtitle">because the world needs you</span>
-		</div>
-	</div>
+	</a>
 
 </body>
 
