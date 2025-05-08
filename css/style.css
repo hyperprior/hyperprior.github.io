@@ -1,0 +1,39 @@
+body {
+	margin: 0;
+	padding: 50px;
+	box-sizing: border-box;
+	font-family: 'Courier New', monospace;
+	background: #1a1b26;
+	color: #a9b1d6;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3 {
+	color: #9ece6a;
+}
+
+a {
+	color: #7aa2f7;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.post-title {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+}
+
+.post-date {
+	color: #565f89;
+	font-size: 0.9em;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #3b4261;
+	margin: 2em 0;
+}
