@@ -1,11 +1,18 @@
 import lume from "lume/mod.ts";
 import search from "lume/plugins/search.ts";
 import prism from "lume/plugins/prism.ts";
+import checkUrls from "lume/plugins/check_urls.ts"; // Add this
+
 
 
 const site = lume({
   dest: "docs/"
 });
+site.use(checkUrls({
+  strict: true,
+  external: true,
+  output: true
+}));
 site.use(search());
 site.use(prism({
   languages: [
