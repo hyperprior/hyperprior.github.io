@@ -3,7 +3,9 @@ import search from "lume/plugins/search.ts";
 import prism from "lume/plugins/prism.ts";
 
 
-const site = lume();
+const site = lume({
+  dest: "docs/"
+});
 site.use(search());
 site.use(prism({
   languages: [
@@ -30,7 +32,6 @@ site.use(prism({
     "data-host": "localhost"
   }
 }));
-
 
 site.add("/styles.css");
 
