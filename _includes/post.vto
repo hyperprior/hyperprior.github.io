@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }} - hyperprior</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/enkia/tokyo-night-vscode-theme/extras/prism/prism-tokyo-night-dark.css" />
+    <script src="https://unpkg.com/prismjs/prism.js"></script>
+    <script src="https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://unpkg.com/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/show-language/prism-show-language.min.css" />
+    <script src="https://unpkg.com/prismjs/plugins/show-language/prism-show-language.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/treeview/prism-treeview.min.css" />
+    <script src="https://unpkg.com/prismjs/plugins/treeview/prism-treeview.min.js"></script>
+
+    <script src="https://unpkg.com/prismjs/plugins/keyword/prism-keyword.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.css" />
+    <script src="https://unpkg.com/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+    <script src="https://unpkg.com/prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/command-line/prism-command-line.min.css" />
+    <script src="https://unpkg.com/prismjs/plugins/command-line/prism-command-line.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css" />
+    <script src="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      Prism.plugins.NormalizeWhitespace.setDefaults({
+        'remove-trailing': true,
+        'remove-indent': true,
+        'left-trim': true,
+        'right-trim': true,
+        'tabs-to-spaces': 2
+      });
+    </script>
+  </head>
+  <body>
+    <div class="sticky-header">
+      <a href="/">
+
+        <pre class="command-line" data-user="hyperprior">
+          <code class="language-bash">cd $HOME</code>
+        </pre>
+      </a>
+      
+
+    <a href="#">
+     <pre class="command-line" data-user="hyperprior">
+    <code class="language-bash">echo {{ slug }}</code>
+    </pre>
+    </a>
+    </div>
+    
+    {{ content }}
+  </body>
+</html>

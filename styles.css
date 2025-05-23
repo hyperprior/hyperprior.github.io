@@ -1,0 +1,750 @@
+body {
+	margin: 0;
+	padding: 50px;
+	box-sizing: border-box;
+	font-family: 'Courier New', Courier, 'Lucida Console', monospace;
+	background: #1a1b26;
+	color: #a9b1d6;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1, h2, h3 {
+	color: #9ece6a;
+}
+
+a {
+	color: #7aa2f7;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.site-title {
+	color: #bb9af7;
+}
+
+.post-title {
+	font-size: 1.5em;
+	margin: 0.5em 0;
+	color: #9ece6a;
+}
+
+.post-date {
+	color: #565f89;
+	font-size: 0.9em;
+}
+
+hr {
+	border: none;
+	border-top: 1px solid #3b4261;
+	margin: 2em 0;
+}
+
+.prompt {
+	font-family: 'Courier New', Courier, 'Lucida Console', monospace;
+	font-weight: bold;
+	letter-spacing: -1px; /* tighten overall spacing */
+	display: inline-flex;
+	gap: 1px; /* minimal space between symbols */
+}
+
+.prompt-part1,
+.prompt-part2,
+.prompt-part3 {
+	display: inline-block;
+}
+.prompt-part1 { color: #7aa2f7; } /* blue */
+.prompt-part2 { color: #9ece6a; } /* green */
+.prompt-part3 { color: #bb9af7; } /* purple */
+
+.post-header {
+	margin-bottom: 2em;
+}
+
+.prompt-line {
+	display: flex;
+	align-items: baseline;
+	gap: 0.5em;
+	line-height: 1.2;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.prompt-line .prompt {
+	letter-spacing: -1px;
+	display: inline-flex;
+	gap: 1px;
+}
+
+.prompt-line .post-title {
+	flex: 1;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.prompt-line .post-date {
+	color: #565f89;
+	font-size: 0.9em;
+	white-space: nowrap;
+}
+
+.subtitle-line {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	color: #c0caf5;
+	margin-top: 0.3em;
+	font-size: 1em;
+}
+
+.output-symbol {
+	color: #7aa2f7;
+	font-weight: bold;
+}
+
+.sh-prompt {
+	color: #9ece6a;
+}
+
+.sh-symbol {
+	color: #bb9af7;
+	padding: 0 0.1em;
+}
+
+.sh-date {
+	color: #c0caf5;
+}
+
+.sh-link {
+	color: #7aa2f7;
+	text-decoration: none;
+}
+.sh-link:hover {
+	text-decoration: underline;
+}
+
+.nvim-block {
+	background-color: #1a1b26;
+	padding: 1em;
+	border-radius: 6px;
+	font-family: 'Courier New', monospace;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #c0caf5;
+	overflow-x: auto;
+	border: 1px solid #3b4261;
+}
+
+.line {
+	display: block;
+	white-space: pre;
+}
+
+.line-num {
+	display: inline-block;
+	width: 2ch;
+	color: #565f89;
+	margin-right: 1ch;
+}
+
+.sh-shebang {
+	color: #7dcfff; /* cyan */
+}
+
+.sh-command {
+	color: #7aa2f7; /* blue */
+	font-weight: bold;
+}
+
+.sh-arg {
+	color: #e0af68; /* yellow/orange */
+}
+
+a.post-preview {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 6px;
+	padding: 0.5em;
+	transition: background 0.2s ease;
+}
+
+a.post-preview:hover {
+	background-color: rgba(122, 162, 247, 0.1); /* #7aa2f7 @ 10% opacity */
+}
+
+.sticky-header {
+	position: sticky;
+	top: 0;
+	background-color: #1a1b26; /* match page background */
+	z-index: 1000;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.md-buffer {
+	background: #1a1b26;
+	color: #c0caf5;
+	padding: 1em;
+	font-family: 'Courier New', monospace;
+	white-space: pre;
+	border-radius: 6px;
+	border-left: 2px solid #7aa2f7;
+}
+
+.md-header1 {
+	color: #7aa2f7;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.md-header2 {
+	color: #e0af68;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+.md-header3 {
+	color: #9ece6a;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.md-header4 {
+	color: #9ece6a;
+	font-size: 1.3em;
+}
+
+.md-header5 {
+	color: #7dcfff;
+	font-size: 1.2em;
+}
+
+.md-header6 {
+	color: #bb9af7;
+	font-size: 1.1em;
+}
+
+.md-header7 {
+	color: #c0caf5;
+	font-size: 1em;
+}
+
+.md-text, .md-comment {
+	color: #a9b1d6;
+}
+
+.md-string {
+	color: #e0af68;
+}
+
+.md-identifier {
+	color: #9ece6a;
+}
+
+.md-function {
+	color: #7dcfff;
+}
+
+.md-namespace {
+	color: #bb9af7;
+}
+
+.md-type {
+	color: #c0caf5;
+}
+
+.md-code {
+	color: #565f89;
+}
+
+.md-keyword {
+	color: #bb9af7;
+	font-weight: bold;
+}
+
+.md-fn, .md-fn-call {
+	color: #7dcfff;
+}
+
+ol, ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* Numbered list (ordered) */
+ol {
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+  margin-bottom: 0.5em;
+  position: relative;
+  padding-left: 2em;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  position: absolute;
+  left: 0;
+  color: #7aa2f7; /* Blueish tone (keyword/link) */
+  font-weight: bold;
+  font-family: 'Courier New', monospace;
+}
+
+/* Bullet list (unordered) */
+ul li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #9ece6a; /* Green (like your headers) */
+  font-size: 1.2em;
+  line-height: 1;
+  font-family: 'Courier New', monospace;
+}
+
+.md-quote {
+	color: #7aa2f7;
+}
+
+.md-link {
+	color: #7dcfff;
+}
+
+.md-url {
+	color: #73daca;
+}
+
+.md-highlight {
+	background-color: #e0af68;
+	color: #1a1b26;
+	padding: 0 2px;
+	border-radius: 2px;
+	font-weight: bold;
+}
+
+.md-codeblock {
+	margin: 1.5em 0;
+	font-family: 'Courier New', monospace;
+}
+
+.md-code-fence {
+	color: #565f89;
+	background: #1a1b26;
+	font-size: 0.9em;
+	padding-left: 0.5em;
+}
+
+.md-tick {
+	color: #7dcfff;
+	font-weight: bold;
+}
+
+.md-lang {
+	color: #bb9af7;
+	margin-left: 0.25em;
+}
+
+.prism-block {
+	margin: 0;
+	background: #1a1b26;
+	border-left: 2px solid #7aa2f7;
+	overflow-x: auto;
+}
+
+/* Tokyo Night Custom Prism Theme */
+/* Add this to your styles.css file */
+
+/* Base styling for code blocks */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #a9b1d6;
+  background: none;
+  font-family: 'Fira Code', 'JetBrains Mono', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+/* Code blocks - same background as page with white border */
+pre[class*="language-"] {
+  padding: 1.25em;
+  margin: 1em 0;
+  overflow: auto;
+  border-radius: 12px;
+  background: inherit; /* Same as page background */
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+  background: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  white-space: normal;
+}
+
+/* Tokyo Night token colors */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #565f89;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #a9b1d6;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f7768e;
+}
+
+.token.boolean,
+.token.number {
+  color: #ff9e64;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #9ece6a;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #89ddff;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: #e0af68;
+}
+
+.token.keyword {
+  color: #bb9af7;
+  font-weight: 500;
+}
+
+.token.regex,
+.token.important {
+  color: #ff9e64;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Enhanced command line styling */
+.command-line-prompt {
+  border-right: none;
+  display: block;
+  float: left;
+  font-size: 100%;
+  letter-spacing: -1px;
+  margin-right: 1em;
+  pointer-events: none;
+  user-select: none;
+  min-width: 0;
+}
+
+.command-line-prompt > span:before {
+  color: #7aa2f7;
+  content: '';
+  display: block;
+  /* padding-right: 0.8em; */
+  font-weight: 500;
+}
+
+/* Custom prompt styling with green arrow */
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@localhost]";
+  color: #9ece6a;
+  font-weight: 600;
+}
+
+.command-line-prompt > span[data-user="root"]:before {
+  content: "[" attr(data-user) "@localhost]";
+  color: #f7768e;
+  font-weight: 600;
+}
+
+/* Default prompt with green arrow */
+.command-line-prompt > span:not([data-user]):before {
+  content: "➜ ";
+  color: #9ece6a;
+  font-weight: 600;
+}
+
+/* Output lines (no prompt) */
+.command-line-prompt > span[data-prompt="none"]:before {
+  content: "";
+}
+
+/* Alternative styling for different prompt types */
+.command-line-prompt > span[data-prompt="PS"]:before {
+  content: "PS > ";
+  color: #7aa2f7;
+  font-weight: 600;
+}
+
+/* Line numbers styling */
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 4em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  letter-spacing: -1px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #565f89;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+/* Toolbar styling */
+div.code-toolbar {
+  position: relative;
+}
+
+div.code-toolbar > .toolbar {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 10;
+}
+
+div.code-toolbar:hover > .toolbar {
+  opacity: 1;
+}
+
+div.code-toolbar > .toolbar .toolbar-item {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar span {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: #a9b1d6;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 0.3em 0.6em;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+div.code-toolbar > .toolbar button:hover,
+div.code-toolbar > .toolbar a:hover,
+div.code-toolbar > .toolbar span:hover {
+  background: rgba(0, 0, 0, 0.7);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+/* Language label styling */
+.code-toolbar .toolbar-item[data-tool="label"] {
+  color: #565f89;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Copy button specific styling */
+.code-toolbar .toolbar-item button[data-copy-state="copy"] {
+  background: rgba(158, 206, 106, 0.2);
+  border-color: #9ece6a;
+  color: #9ece6a;
+}
+
+.code-toolbar .toolbar-item button[data-copy-state="copied"] {
+  background: rgba(123, 154, 247, 0.2);
+  border-color: #7aa2f7;
+  color: #7aa2f7;
+}
+
+/* Highlight specific lines */
+.line-highlight {
+  background: rgba(123, 154, 247, 0.1);
+  border-left: 3px solid #7aa2f7;
+  margin: 0 -1.25em;
+  padding: 0 1.25em;
+}
+
+/* Match braces highlighting */
+.token.punctuation.brace-hover,
+.token.punctuation.brace-selected {
+  background: rgba(247, 118, 142, 0.2);
+  border-radius: 2px;
+}
+
+/* Diff highlighting */
+.token.inserted {
+  background: rgba(158, 206, 106, 0.2);
+  color: #9ece6a;
+}
+
+.token.deleted {
+  background: rgba(247, 118, 142, 0.2);
+  color: #f7768e;
+}
+
+/* Enhanced command styling for better readability */
+pre.language-bash .command-line-prompt > span,
+pre.language-shell .command-line-prompt > span,
+pre.language-sh .command-line-prompt > span {
+  font-weight: 600;
+}
+
+/* Custom styling for different command types */
+pre.language-bash .token.function {
+  color: #7aa2f7;
+  font-weight: 500;
+}
+
+pre.language-bash .token.parameter {
+  color: #e0af68;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 8px;
+  }
+  
+  code[class*="language-"],
+  pre[class*="language-"] {
+    font-size: 13px;
+  }
+  
+  .command-line-prompt > span[data-user]:before {
+    content: "➜ $ ";
+  }
+  
+  .command-line-prompt > span[data-user="root"]:before {
+    content: "➜ # ";
+  }
+}
+
+.shell-table {
+  border-collapse: separate; /* allows rounded corners */
+  border-spacing: 0;
+  width: 100%;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95em;
+  color: #a9b1d6;
+  border: 2px solid #3b4261; /* ⬅ outer border thickness */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.shell-table th,
+.shell-table td {
+  padding: 0.5em 1em;
+  border-right: 2px solid #3b4261; /* ⬅ vertical dividers */
+}
+
+.shell-table th:last-child,
+.shell-table td:last-child {
+  border-right: none; /* no right bar on last column */
+}
+
+.shell-table th {
+  color: #9ece6a;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #3b4261; /* ⬅ horizontal bar under headers */
+  background-color: #1a1b26;
+}
+
+.shell-table td:nth-child(2) {
+  color: #e0af68; /* yellow: name */
+}
+
+.shell-table td:nth-child(3) {
+  color: #9ece6a; /* green: type */
+}
+
+.shell-table td:nth-child(4) {
+  color: #7dcfff; /* cyan: size */
+}
+
+.shell-table td:nth-child(5) {
+  color: #bb9af7; /* purple: modified */
+}
