@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
-    <title>hyperprior</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nushell is something different entirely - hyperprior</title>
 
     <script src="https://unpkg.com/prismjs/prism.js"></script>
     <script src="https://unpkg.com/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
@@ -18,6 +18,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.css">
     <script src="https://unpkg.com/prismjs/plugins/line-numbers/prism-line-numbers.js"></script>
+    <link rel="stylesheet" href="/styles.css">
 
     <script>
       Prism.plugins.NormalizeWhitespace.setDefaults({
@@ -28,55 +29,26 @@
         'tabs-to-spaces': 2
       });
     </script>
-    <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <div class="sticky-header">
-      
-      <a href="/about">
-<pre class="command-line language-bash" data-user="hyperprior" tabindex="0"><code class="language-bash">
-whoami | describe
-</code>
-</pre>
-</a>
-<h1 class="site-title">hyperprior</h1>
-<pre class="language-bash" tabindex="0"><code class="language-bash">
-#!/usr/bin/env nu
-def to-post-table [] {
-  $in
-  | select name modified size
-  | where name ends-with '.md'
-  | enumerate
-  | each {|post|
-    $post.item
-    | merge {
-      row-number: $post.index
-      title: (open $post.item.name | frontmatter | title)
-      slug: ($post.item.name | str replace -r '(.+).md' '$1')
-      modified: ($post.item.modified | date humanize)
-    }
-  }
-}
-print (ls posts | to-post-table)
-</code>
-</pre>
-<table class="shell-table">
-      <tbody><tr>
-        <th>#</th>
-        <th>name</th>
-        <th>size</th>
-        <th>modified</th>
-      </tr>
-<tr><td>0</td>
-  <td><a href="posts/good-shit" class="sh-link">good shit</a></td>
-  <td>2.1 kB</td>
-  <td>9 hours ago</td></tr><tr><td>1</td>
-  <td><a href="posts/nu-shell" class="sh-link">nu shell is something different entirely</a></td>
-  <td>74 B</td>
-  <td>a minute ago</td></tr>
-</tbody></table>
+      <a href="/">
 
+        <pre class="command-line language-bash" data-user="hyperprior" tabindex="0">          <code class="language-bash">cd $HOME</code>
+        </pre>
+      </a>
+      
+
+    <a href="#">
+     <pre class="command-line language-bash" data-user="hyperprior" tabindex="0">    <code class="language-bash">echo </code>
+    </pre>
+    </a>
     </div>
+    
+    <p>i don't know what it is yet, but <a href="https://www.nushell.sh/">nushell</a> is not just a new shell.</p>
+<p>the closest i can think to call it is the dynamically-typed DSL/interpreter for rust.</p>
+<p>it's what python was supposed to be for c before it became it's own behemoth.</p>
+
   
 
 </body></html>

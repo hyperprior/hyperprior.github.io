@@ -1,0 +1,85 @@
+---
+layout: post.vto
+title: what i'm reading
+---
+
+
+# read
+- 1066 and before all that - ed west
+- annihilation - jeff vandermeer
+- the bell jar - sylvia plath
+- blackshirts and reds - michael parenti
+- brave new world - aldous huxley
+- breath - james nestor
+- bushido - inazo nitobe
+- chapterhouse dune - frank herbert
+- the checklist manifesto - atul gawande
+- children of dune - frank herbert
+- the communist manifesto - karl marx, friedrich engels
+- the corona crash - grace blakeley
+- critique of the gotha programme - karl marx
+- the curious case of benjamin button - f. scott fitzgerald
+- dark days - james baldwin
+- deep work
+- dune - frank herbert
+- dune messiah - frank herbert
+- the eighteenth brumaire of louis bonaparte - karl marx
+- the essential rumi - jalal al-din rumio
+- the faggots and their friends between revolutions - larry mitchell
+- fart quest - aaron reynolds
+- fart quest - the barf of the bedazzler
+- fart quest - the dragon’s dookie
+- fart quest - the troll’s toe cheese
+- the fellowship of the ring - j.r.r. tolkien
+- fight club - chuck palahniuk
+- finite and infinite games - james p. carse
+- the fire next time - james baldwin
+- flow my tears, the policeman said - philip k. dick
+- franny and zooey - j.d. salinger
+- friday black - nana kwame adjei-brenyah
+- god emperor of dune - frank herbert
+- the hitchhiker's guide to the galaxy - douglas adams
+- the hobbit - j.r.r. tolkien
+- how to read wittgenstein - ray monk
+- howl, and other poems - allen ginsberg
+- to kill a mockingbird - harper lee
+- lady susan - jane austen
+- the league of regrettable sidekicks - jon morris
+- the league of regrettable superheroes - jon morris
+- logan’s run - william f. nolan
+- lunch poems - frank o’hara
+- the martian - andy weir
+- narrative of sojourner truth - sojourner truth
+- nobody wants to read your shit - steven pressfield
+- old possum's book of practical cats - t.s. eliot
+- personal kanban - jim benson
+- the picture of dorian gray - oscar wilde
+- player piano - kurt vonnegut
+- the postman always rings twice - james m. cain
+- the power and the glory - graham greene
+- the principles of communism - friedrich engels
+- prophetika - sun ra
+- queerbook - philly aids thrift @ giovanni's room
+- the return of the king - j.r.r. tolkien
+- the right to be lazy - paul lafargue
+- ring shout - p. djèlí clark
+- a rulebook for arguments
+- slaughterhouse-five
+- socialism, utopian and scientific - friedrich engels
+- the sorrows of young werther - johann wolfgang von goethe
+- the strange case of dr. jekyll and mr. hyde - robert louis stevenson
+- through the looking glass, and what alice found there? - lewis carroll
+- time of the magicians - wolfram eilenberger
+- toward the queerest insurrection - the mary nardini gang
+- treasure island - robert louis stevenson
+- treatise on modern stimulants - honore de balzac
+- the two towers - j.r.r. tolkien
+- the uninhabitable earth - david wallace-wells
+- value, price and profit - karl marx
+- wage labor and capital - karl marx
+- the wanderer's havamal - jackson crawford
+- war and peace - leo tolstoy
+- the war of art - steven pressfield
+- wherever you go, there you are - jon kabat-zinn
+- the world doesn't require you - rion amilcar scott
+- the wu-tang manual - the rza

@@ -43,5 +43,8 @@ print (ls posts | to-post-table)
 <tr><td>0</td>
   <td><a href="posts/good-shit" class="sh-link">good shit</td>
   <td>2.1 kB</td>
-  <td>3 hours ago</td></tr>
+  <td>9 hours ago</td></tr><tr><td>1</td>
+  <td><a href="posts/nu-shell" class="sh-link">nu shell is something different entirely</td>
+  <td>74 B</td>
+  <td>a minute ago</td></tr>
 </table>

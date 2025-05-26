@@ -57,7 +57,7 @@
             runHook preBuild
 
             echo "Installing Lume and dependencies..."
-            deno run -A https://deno.land/x/lume/install.ts
+            echo -e "1\ny" | deno run -A https://lume.land/init.ts --no-cms
 
             echo "Building static site..."
             deno task build || deno run -A _config.ts
@@ -102,7 +102,6 @@
                       runHook postInstall
           '';
 
-          # Allow network access during build for Deno
           __noChroot = true;
 
           meta = with pkgs.lib; {
@@ -111,12 +110,10 @@
           };
         };
 
-        # Additional package for serving the site locally
         packages.serve = pkgs.writeShellScriptBin "serve-site" ''
           ${pkgs.python3}/bin/python -m http.server 8000 -d ${self'.packages.default}
         '';
 
-        # Apps for easy access
         apps.default = {
           type = "app";
           program = "${self'.packages.serve}/bin/serve-site";
@@ -126,16 +123,10 @@
           type = "app";
           program = "${pkgs.writeShellScript "build-site" ''
             cd "$PWD"
+            echo "building index"
+            ${pkgs.nushell}/bin/nu index
             ${pkgs.deno}/bin/deno task build
           ''}";
-        };
-      };
-
-      flake = {
-        # Template for bootstrapping new Lume projects
-        templates.default = {
-          path = ./template;
-          description = "A basic Lume static site template";
         };
       };
 
