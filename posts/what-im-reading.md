@@ -1,8 +1,8 @@
 ---
 layout: post.vto
 title: what i'm reading
+slug: what-im-reading.md
 ---
-
 
 # read
 - 1066 and before all that - ed west

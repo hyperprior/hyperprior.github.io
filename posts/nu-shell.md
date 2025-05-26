@@ -1,6 +1,7 @@
 ---
 layout: post.vto
 title: nushell is something different entirely
+slug: nushell.md
 ---
 
 i don't know what it is yet, but [nushell](https://www.nushell.sh/) is not just a new shell.
